@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Відділ кадрів</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333; /* Колір тексту для забезпечення читабельності */
+        background-image: url('image1.avif'); /* Зображення на тлі */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    nav ul {
+        list-style-type: none; /* Відключення стандартної маркерної риски у списку */
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline; /* Розташування пунктів меню в ряд */
+        margin-right: 20px; /* Відступ між пунктами меню */
+    }
+
+    nav ul li a {
+        text-decoration: none; /* Відключення підкреслення посилань */
+        color: #333; /* Колір тексту пунктів меню */
+    }
+
+    nav ul li a:hover {
+        color: #008080; /* Колір тексту при наведенні на пункт меню */
+    }
+
+    hr {
+        border: none; /* Відключаємо рамку */
+        height: 2px; /* Задаємо висоту лінії */
+        background-color: #abcdef; /* Колір лінії */
+        margin: 20px 0; /* Задаємо відступи від лінії до сусідніх елементів */
+    }
+
+    section {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 800px;
+        background-color: e0ffff; /* Колір фону секцій */
+        border-radius: 8px; /* Закруглені кути секцій */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тінь для секцій */
+    }
+
+    section::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    h2 {
+        text-align: left;
+        color: #008080; /* Колір заголовка */
+        margin-top: 20px; /* Додатковий відступ від верхнього краю */
+        padding-left: 150px; /* Відступ зліва */
+    }
+
+    ul {
+        padding-left: 20px; /* Відступ для списку */
+    }
+
+    li {
+        margin-bottom: 10px; /* Відступ між елементами списку */
+        position: relative; /* Позиціонування для створення крапок */
+        line-height: 1.6; /* Міжрядковий інтервал */
+    }
+
+    li::before {
+        content: "";
+        position: absolute;
+        left: -20px; /* Відступ крапок від лівого краю */
+        top: 7px; /* Вирівнювання крапок по вертикалі */
+        width: 6px; /* Ширина крапок */
+        height: 6px; /* Висота крапок */
+        border-radius: 50%; /* Закруглення крапок */
+        background-color: #008080; /* Колір крапок */
+    }
+
+    h1 {
+        text-align: left;
+        color: #008080; /* Колір заголовка */
+        margin-top: 20px; /* Додатковий відступ від верхнього краю */
+        padding-left: 150px; /* Відступ зліва */
+    }
+
+    table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        background-color: rgba(255, 255, 255, 0.8); /* Прозорість для кращого читання */
+        border-radius: 8px; /* Закруглені кути таблиці */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тінь для таблиці */
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 10px; /* Збільшення відступів в комірках */
+        text-align: left;
+        font-size: 16px; /* Розмір тексту */
+    }
+
+    th {
+        background-color: #f2f2f2;
+        font-size: 18px; /* Збільшення розміру тексту для заголовків стовпців */
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    tr:first-child {
+        font-weight: bold;
+    }
+
+    td[rowspan] {
+        vertical-align: top;
+    }
+
+    /* Анімація для рядків таблиці */
+    tr {
+        transition: background-color 0.3s ease;
+    }
+
+    tr:hover {
+        background-color: #f0f0f0; /* Зміна кольору рядка при наведенні курсора */
+    }
+
+</style>
+</head>
+<body>
+
+<h1>Відділ кадрів</h1>
+
+<nav>
+    <ul>
+        <li><a href="#news">Новини</a></li>
+        <li><a href="#activities">Діяльність</a></li>
+        <li><a href="#team">Колектив</a></li>
+        <li><a href="#legislation">Нормативно-правова база</a></li>
+        <li><a href="#employment">Оформлення на роботу</a></li>
+        <li><a href="#document_samples">Взірці документів</a></li>
+        <li><a href="#student_department">Студентський відділ кадрів</a></li>
+        <li><a href="#job_descriptions">Типові посадові інструкції працівників</a></li>
+    </ul>
+</nav>
+<hr>
+
+<section id="functions">
+    <h2>Основні функції відділу кадрів</h2>
+    <ul>
+        <li>Набір персоналу</li>
+        <li>Управління персоналом</li>
+        <li>Тренінг та розвиток</li>
+        <li>Кадрові документи</li>
+        <li>Організація оплати</li>
+        <li>Кадрові консультації</li>
+        <li>Внутрішній аудит кадрів</li>
+        <li>Взаємодія з громадськістю</li>
+        <li>Впровадження нових політик та процедур</li>
+    </ul>
+</section>
+
+<h1>Відділ кадрів студентів</h1>
+
+<table>
+    <tr>
+        <th>Факультет</th>
+        <th>Спеціальність</th>
+        <th>Кількість студентів</th>
+    </tr>
+    <tr>
+        <td rowspan="3">Факультет інформатики</td>
+        <td>Програмування</td>
+        <td>120</td>
+    </tr>
+    <tr>
+        <td>Бази даних</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td>Інформаційні системи</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Факультет економіки</td>
+        <td>Фінанси</td>
+        <td>90</td>
+    </tr>
+    <tr>
+        <td>Маркетинг</td>
+        <td>70</td>
+    </tr>
+    <tr>
+        <td rowspan="3">Факультет математики</td>
+        <td>Прикладна математика</td>
+        <td>110</td>
+    </tr>
+    <tr>
+        <td>Статистика</td>
+        <td>60</td>
+    </tr>
+    <tr>
+        <td>Математичне моделювання</td>
+        <td>80</td>
+    </tr>
+    <!-- Додані факультети -->
+    <tr>
+        <td rowspan="2">Факультет філології</td>
+        <td>Українська філологія</td>
+        <td>70</td>
+    </tr>
+    <tr>
+        <td>Англійська філологія</td>
+        <td>60</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Факультет хімії</td>
+        <td>Органічна хімія</td>
+        <td>45</td>
+    </tr>
+    <tr>
+        <td>Неорганічна хімія</td>
+        <td>55</td>
+    </tr>
+</table>
+
+</body>
+</html>
